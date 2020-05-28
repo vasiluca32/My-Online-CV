@@ -18,7 +18,7 @@ function App() {
         >
           Learn React
         </a> */}
-        <p>the apppp</p>
+        <p>ce vrei tu defapt????</p>
       </header>
     </div>
   );
