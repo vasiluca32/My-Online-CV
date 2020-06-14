@@ -1,17 +1,25 @@
 .work-container{
-    padding: 20px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    margin: 20px 200px 0px 200px;
+    align-items: center;
+}
+
+.work{
+    border: 1px solid black;
 }
 .work-exp{
     display: flex;
     margin-top: 10px;
     padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 .company-logo img{
     width:50px;
     height:50px;
 }
-
 
 .text{
     width: 100%;
@@ -20,8 +28,8 @@
 }
 
 .role-location p{
-font-style: italic;
-color: seagreen;
+    font-style: italic;
+    color: seagreen;
 }
 
 .text::after{

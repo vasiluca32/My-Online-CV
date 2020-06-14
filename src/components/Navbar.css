@@ -30,3 +30,11 @@
     background-color: #ddd;
     color: black;
   }
+
+  .active{
+    background-color: #ddd;
+    color: black;
+  }
+  .inactive{
+    background-color: #333;
+  }
