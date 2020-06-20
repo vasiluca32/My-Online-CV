@@ -1,4 +1,4 @@
-.work-container{
+.section-container{
     display: flex;
     flex-direction: column;
     padding-top: 10px;
@@ -6,10 +6,10 @@
     align-items: center;
 }
 
-.work{
+.section-wrap{
     border: 1px solid black;
 }
-.work-exp{
+.section{
     display: flex;
     margin-top: 10px;
     padding-bottom: 5px;
