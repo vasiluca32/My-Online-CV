@@ -5,8 +5,11 @@ export default function Work() {
 
     return (
         <div className="section-container">
-            <h1>Work history</h1>
-            <br></br>
+            <div className="section-container-header">
+                <h1>Work history</h1>
+
+            </div>
+
             <div className="section-wrap">
                 <div className="section">
                     <div className="company-logo">
@@ -123,6 +126,8 @@ As a crew member at McDonald's i used to work in the kitchen with people from ea
                     </div>
                 </div>
             </div>
+
         </div>
+
     )
 }
