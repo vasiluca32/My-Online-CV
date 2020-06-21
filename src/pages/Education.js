@@ -5,7 +5,7 @@ export default function Education() {
 
     return (
         <div className="section-container">
-            <h1>Current page title</h1>
+            <h1>Education</h1>
             <br></br>
             <div className="section-wrap">
                 <div className="section">
