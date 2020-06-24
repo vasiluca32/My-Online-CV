@@ -7,28 +7,49 @@
   bottom: 0;
   color: white;
   text-align: center;
-  height: 150px;
-
   padding-top: 1em;
+  padding-bottom: 40px;
+}
+
+.row a{
+  color: white;
 }
 
 .row h3{
   margin-top: 5px;
   margin-bottom: 20px;
+  font-family: Parkavenue, cursive;
 }
 
 .about{
   border:1px solid black
 }
 .contact{
-  border:1px solid black
+  display: flex;
+  flex-direction: column;
+  
 }
-.social a{
-  font-size: xx-large;
+
+
+
+.contact div{
+  display:flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 80px;
+}
+.contact div p{
+  margin: 0px 0px 0px 10px;
 }
 
 .col-md-4 p{
-  font-size: large;
+  font-size: medium;
+  
+}
+
+.description p{
+  padding: 0px 30px;
+  align-items: start;
 }
 
 .icon{
