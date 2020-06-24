@@ -5,7 +5,7 @@ import Header from "./components/Header"
 import Body from "./components/Body"
 import Footer from "./components/Footer"
 import { BrowserRouter as Router } from "react-router-dom";
-
+import Pannel from "./components/Side-pannel"
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <div className="App">
         <Header />
         <Body />
+        <Pannel />
         <Footer />
       </div>
     </Router>

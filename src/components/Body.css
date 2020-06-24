@@ -1,5 +1,6 @@
 .body{
-    background-color: brown;
+    background-color: ghostwhite;
     width: 100%;
     margin-top: 52px;
+    min-height: 88vh;
 }

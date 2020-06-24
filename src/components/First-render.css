@@ -1,0 +1,11 @@
+.first-render-wrap{
+    display: flex;
+    justify-content: center;
+
+}
+
+.CV-pic{
+    height:200px;
+    width:200px;
+}
+
