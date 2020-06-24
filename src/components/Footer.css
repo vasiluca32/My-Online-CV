@@ -1,9 +1,43 @@
-.footer{
+.row{
+  display:flex;
+  justify-content: space-evenly;
   width: 100%;
   background-color: dimgray;
   left: 0;
   bottom: 0;
   color: white;
   text-align: center;
-  height: 60px;
+  height: 150px;
+
+  padding-top: 1em;
+}
+
+.row h3{
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.about{
+  border:1px solid black
+}
+.contact{
+  border:1px solid black
+}
+.social a{
+  font-size: xx-large;
+}
+
+.col-md-4 p{
+  font-size: large;
+}
+
+.icon{
+  width: 25px;
+  height:25px;
+  cursor: pointer;
+  margin:5px;
+}
+
+.icon:hover{
+  color:blue;
 }
