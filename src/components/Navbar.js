@@ -91,7 +91,7 @@ class Navbar extends Component {
 
     render() {
         return (
-            <div className="navbar">
+            <div className="navigare">
                 <Link onClick={this.home} to="/Home" className={this.state.home ? "active" : "inactive"}><p>Home</p></Link>
                 <Link onClick={this.skills} to="/Skills & Objecives" className={this.state.skills ? "active" : "inactive"}><p>Skills & Objectives</p></Link>
                 <Link onClick={this.trainings} to="/Trainings" className={this.state.trainings ? "active" : "inactive"}><p>Trainings</p></Link>

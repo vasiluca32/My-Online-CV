@@ -9,7 +9,7 @@
 } */
 
 
-.navbar {
+.navigare {
     background-color: #333;
     position: fixed;
     top: 0;
@@ -18,7 +18,7 @@
     transition: top 0.3s;
   }
   
-.navbar a {
+.navigare a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -28,7 +28,7 @@
     font-size: 17px;
   }
 
-  .navbar a:hover {
+  .navigare a:hover {
     background-color: #ddd;
     color: black;
   }
