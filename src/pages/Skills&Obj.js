@@ -5,9 +5,30 @@ export default function Skills() {
 
     return (
         <div className="section-container">
-            <h1>Current page title</h1>
-            <br></br>
-            <div className="section-wrap">
+            <div className="section-container-header">
+                <h1>Skills and Objectives</h1>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            {/* <div className="section-wrap">
                 <div className="section">
                     <div className="company-logo">
                         <img src="" alt="company-logo"></img>
@@ -24,7 +45,7 @@ export default function Skills() {
                         <p>short description asdASDSAD ASFAS FSADF SDFSDF SDF SDF DSFSDFASWEETERGE EGERG ERGEQERG  ERGQE  ERGQEG QERGQERG QERGQE RGQERGQ ERGQERG QERGR G E RGFGDLKlkslfkjslkgjlskfgjdf gdfgdfgd gdf gd fgd fgdgdfgdrg fgdge rge rgd dg  erge</p>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }

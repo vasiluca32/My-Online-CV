@@ -1,14 +1,16 @@
 .row{
-  display:flex;
-  justify-content: space-evenly;
-  width: 100%;
+  /* display:flex; */
+  /* justify-content: space-evenly;
+  width: 100%; */
   background-color: dimgray;
-  left: 0;
-  bottom: 0;
+  /* left: 0;
+  bottom: 0; */
   color: white;
-  text-align: center;
+  /* text-align: center;
   padding-top: 1em;
-  padding-bottom: 40px;
+  padding-bottom: 40px; */
+  /* justify-content: center; */
+  margin: 0px !important;
 }
 
 .row a{
@@ -16,9 +18,11 @@
 }
 
 .row h3{
+
   margin-top: 5px;
   margin-bottom: 20px;
   font-family: Parkavenue, cursive;
+  text-align: center;
 }
 
 .about{
@@ -26,25 +30,35 @@
 }
 .contact{
   display: flex;
-  flex-direction: column;
-  
+  /* flex-direction: column; */
+  justify-content: center;
 }
-
+.social{
+  display: flex;
+  justify-content: center;
+}
 
 
 .contact div{
   display:flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: start;
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 .contact div p{
   margin: 0px 0px 0px 10px;
 }
 
 .col-md-4 p{
+  
   font-size: medium;
   
+}
+
+.icons{
+  display:flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .description p{
