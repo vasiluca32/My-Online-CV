@@ -5,8 +5,10 @@ export default function Education() {
 
     return (
         <div className="section-container">
-            <h1>Education</h1>
-            <br></br>
+            <div className="section-container-header">
+                <h1>Education</h1>
+                <br></br>
+            </div>
             <div className="section-wrap">
                 <div className="section">
                     <div className="company-logo">
