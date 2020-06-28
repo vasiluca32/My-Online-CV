@@ -23,7 +23,7 @@ export default function Education() {
                             <p>Cluj, Romania</p>
                         </div>
                         <br></br>
-                        <p>short description asdASDSAD ASFAS FSADF SDFSDF SDF SDF DSFSDFASWEETERGE EGERG ERGEQERG  ERGQE  ERGQEG QERGQERG QERGQE RGQERGQ ERGQERG QERGR G E RGFGDLKlkslfkjslkgjlskfgjdf gdfgdfgd gdf gd fgd fgdgdfgdrg fgdge rge rgd dg  erge</p>
+                        <p>I liked very much what I've learned for Bachelor and I wanted to know even more, here is the reason why I followed the same field for Masters</p>
                     </div>
                 </div>
                 <div className="section">
@@ -39,7 +39,7 @@ export default function Education() {
                             <p>Cluj, Romania</p>
                         </div>
                         <br></br>
-                        <p>short description asdASDSAD ASFAS FSADF SDFSDF SDF SDF DSFSDFASWEETERGE EGERG ERGEQERG  ERGQE  ERGQEG QERGQERG QERGQE RGQERGQ ERGQERG QERGR G E RGFGDLKlkslfkjslkgjlskfgjdf gdfgdfgd gdf gd fgd fgdgdfgdrg fgdge rge rgd dg  erge</p>
+                        <p>After graduating High School in economics, I wanted to continue my studies in the same field and I followed the specialisation in Trade Tourism and Services.</p>
                     </div>
                 </div>
             </div>

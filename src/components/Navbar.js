@@ -70,12 +70,6 @@ class Navbar extends Component {
 
 
 
-
-
-
-
-
-
     resetState() {
         this.setState({
             home: false,
@@ -93,13 +87,29 @@ class Navbar extends Component {
         return (
             <div className="navigare">
                 <Link onClick={this.home} to="/Home" className={this.state.home ? "active" : "inactive"}><p>Home</p></Link>
-                <Link onClick={this.skills} to="/Skills & Objecives" className={this.state.skills ? "active" : "inactive"}><p>Skills & Objectives</p></Link>
-                <Link onClick={this.trainings} to="/Trainings" className={this.state.trainings ? "active" : "inactive"}><p>Trainings</p></Link>
-                <Link onClick={this.work} to="/Work history" className={this.state.work ? "active" : "inactive"}><p>Work history</p></Link>
-                <Link onClick={this.education} to="/Education" className={this.state.education ? "active" : "inactive"}><p>Education</p></Link>
-                <Link onClick={this.more} to="/More about" className={this.state.more ? "active" : "inactive"}><p>More about</p></Link>
-                <Link onClick={this.hobbies} to="/Hobbies" className={this.state.hobbies ? "active" : "inactive"}><p>Hobbies</p></Link>
-                <Link onClick={this.contact} to="/Contact" className={this.state.contact ? "active" : "inactive"}><p>Contact</p></Link>
+                <div className="original-links">
+                    <Link onClick={this.skills} to="/Skills & Objecives" className={this.state.skills ? "active" : "inactive"}><p>Skills & Objectives</p></Link>
+                    <Link onClick={this.trainings} to="/Trainings" className={this.state.trainings ? "active" : "inactive"}><p>Trainings</p></Link>
+                    <Link onClick={this.work} to="/Work history" className={this.state.work ? "active" : "inactive"}><p>Work history</p></Link>
+                    <Link onClick={this.education} to="/Education" className={this.state.education ? "active" : "inactive"}><p>Education</p></Link>
+                    <Link onClick={this.more} to="/More about" className={this.state.more ? "active" : "inactive"}><p>More about</p></Link>
+                    <Link onClick={this.hobbies} to="/Hobbies" className={this.state.hobbies ? "active" : "inactive"}><p>Hobbies</p></Link>
+                    <Link onClick={this.contact} to="/Contact" className={this.state.contact ? "active" : "inactive"}><p>Contact</p></Link>
+                </div>
+                <div className="burger-hidden">
+
+                    <img src="https://image.flaticon.com/icons/svg/56/56763.svg" alt="burger-button"></img>
+
+                    <div className="dropdown-content">
+                        <Link onClick={this.skills} to="/Skills & Objecives" className={this.state.skills ? "active" : "inactive"}><p>Skills & Objectives</p></Link>
+                        <Link onClick={this.trainings} to="/Trainings" className={this.state.trainings ? "active" : "inactive"}><p>Trainings</p></Link>
+                        <Link onClick={this.work} to="/Work history" className={this.state.work ? "active" : "inactive"}><p>Work history</p></Link>
+                        <Link onClick={this.education} to="/Education" className={this.state.education ? "active" : "inactive"}><p>Education</p></Link>
+                        <Link onClick={this.more} to="/More about" className={this.state.more ? "active" : "inactive"}><p>More about</p></Link>
+                        <Link onClick={this.hobbies} to="/Hobbies" className={this.state.hobbies ? "active" : "inactive"}><p>Hobbies</p></Link>
+                        <Link onClick={this.contact} to="/Contact" className={this.state.contact ? "active" : "inactive"}><p>Contact</p></Link>
+                    </div>
+                </div>
             </div >
         )
     };

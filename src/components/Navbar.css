@@ -22,7 +22,7 @@
 .navigare a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: lightgray;
     text-align: center;
     padding: 15px;
     text-decoration: none;
@@ -46,3 +46,62 @@
   .inactive{
     background-color: #333;
   }
+
+.burger-hidden img{
+  position: absolute;
+  height: 64px;
+  right: 0px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    position: absolute;
+    right: 0px;
+    background-color: currentColor;
+    top: 64px;
+    display: none;
+}
+
+.dropdown-content a{
+  background-color: initial;
+}
+
+
+@media only screen and (max-width: 992px) {
+  .burger-hidden img{
+    display: block;
+  }
+  .original-links{
+    display: none;
+  }
+
+  .burger-hidden img:hover + .dropdown-content{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    position: absolute;
+    right: 0px;
+    background-color: currentColor;
+    top: 64px;
+  }
+.dropdown-content:hover{
+  display: block;
+  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  position: absolute;
+  right: 0px;
+  background-color: currentColor;
+  top: 64px;
+}
+
+
+
+}

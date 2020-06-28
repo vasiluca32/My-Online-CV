@@ -1,0 +1,85 @@
+.point{
+    width:50px;
+    height:50px;
+}
+
+.arrow-right{
+    width:50px;
+    height:50px;
+}
+
+.row{
+    background-color: ghostwhite;
+}
+
+.horizontal-elements{
+    display:flex;
+    
+    justify-content: space-around;
+}
+
+.content-wrap{
+    display: flex;
+    padding: 20px 68px 0px 45px;
+}
+
+.collumn{
+    padding-right: 25px;
+}
+
+.skills-content{
+    margin-bottom: 25px;
+}
+
+.point-wrap, .arrow-wrap{
+    margin-right: 20px;
+}
+
+.objective-wrap{
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+    padding: 0px 300px;
+}
+
+.objective-wrap img{
+    width:50px;
+    height:50px;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .objective-wrap{
+        display:flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 65px;
+        padding: 0px 25%;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .content-wrap{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .objective-wrap{
+       
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 65px;
+        padding: 10px;
+    }
+
+    .objective-wrap p{
+        padding: 0px 10%;
+    }
+
+
+}

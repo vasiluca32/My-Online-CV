@@ -17,30 +17,34 @@ export default function Hobbies() {
 
             <div className="hobbies">
 
-                <div>
+                <div className="hobby-wrapper">
                     <div className="hobby">
                         <MdPersonalVideo className="icon-hobby" />
-                        <h4>Title</h4>
-                        <p>textkdn;ksjnb;dfddgdgff fffffffffffffffffff ffffffffffdfgbbdfbfff fffffffffffffffffffffffksfjngb;fksjgbnk</p>
+                        <h4>Programming</h4>
+                        <p>Lately I found out that I’m passionate about computing and creating things from scratch.</p>
+                    </div>
+                    <div className="hobby">
+                        <IoIosFootball className="icon-hobby" />
+                        <h4>Football</h4>
+                        <p>Besides this, I like being active and I am mainly passionate about playing football with my friends.</p>
+                    </div>
+
+
+                </div>
+                <div className="hobby-wrapper">
+                    <div className="hobby">
+                        <GiHammerNails className="icon-hobby" />
+                        <h4>Wood-work</h4>
+                        <p>Living in the countryside I enjoy woodworking easy crafts...</p>
                     </div>
 
                     <div className="hobby">
-                        <IoIosFootball className="icon-hobby" />
-                        <h4>Title</h4>
-                        <p>textkdn;ksjnb;ksfjngb;fksjgbnk;fjgnbk;fnjgbkfjg</p>
-                    </div>
-                </div>
-                <div>
-                    <div className="hobby">
                         <MdPets className="icon-hobby" />
-                        <h4>Title</h4>
-                        <p>textkdn;ksjnb;ksfjngb;fksjgbnk;fjgnbk;fnjgbkfjg</p>
+                        <h4>Pet lover</h4>
+                        <p>...and long walks through the forest with my dogs.</p>
                     </div>
-                    <div className="hobby">
-                        <GiHammerNails className="icon-hobby" />
-                        <h4>Title</h4>
-                        <p>textkdn;ksjnb;ksfjngb;fksjgbnk;fjgnbk;fnjgbkfjg</p>
-                    </div>
+
+
                 </div>
 
 
