@@ -30,11 +30,11 @@ export default function Footer() {
                         </div>
                         <div>
                             <AiOutlineMail className="icon" />
-                            <p>lucavasileluca@gmail.com</p>
+                            <p>vasilelucaluca@gmail.com</p>
                         </div>
                         <div>
                             <RiSkypeLine className="icon" />
-                            <p>vasiluca.32</p>
+                            <p>vasi3290</p>
                         </div>
                     </div>
 

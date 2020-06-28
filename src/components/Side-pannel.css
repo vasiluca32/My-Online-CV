@@ -52,7 +52,7 @@
 .side-details li{
     font-size: small;
 }
-.side-details span{
+.side-details span, .bottom-details span{
     font-weight: bold;
 }
 .side-details ul{
