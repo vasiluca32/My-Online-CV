@@ -5,8 +5,9 @@ export default function Trainings() {
 
     return (
         <div className="section-container">
-            <h1>Trainings</h1>
-            <br></br>
+            <div className="section-container-header">
+                <h1>Trainings</h1>
+            </div>
             <div className="section-wrap">
                 <div className="section">
                     <div className="company-logo">

@@ -33,6 +33,7 @@ export default function Work() {
                     </div>
                     <div className="text">
                         <h3>Bombardier</h3>
+                        <p>2 years and 9 months</p>
                         <br></br>
                         <div className="role-location">
                             <h5>Accounts Payable Analyst</h5>
@@ -41,6 +42,15 @@ export default function Work() {
                         </div>
                         <br></br>
                         <p>It was the logical move for me after 13 months in the Scanning team. I'm working in a team of 23 people where the main task is to process invoices in SAP by checking that all invoicing requirements are met by our vendors.</p>
+                        <br></br>
+                        <br></br>
+                        <div className="role-location">
+                            <h5>Scanning Analyst</h5>
+                            <p>Feb 2017 - May 2018 | 1 year and 4 months</p>
+                            <p>Cluj, Romania</p>
+                        </div>
+                        <br></br>
+                        <p>It was my first job after my last USA experience. I worked in a team of 7 people as a scanning analyst where the main task was to transform the invoices from paper into digital image so the Accounts Payable team will process them further.</p>
                     </div>
                 </div>
                 <div className="section">
