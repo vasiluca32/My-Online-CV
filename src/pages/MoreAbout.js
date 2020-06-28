@@ -13,7 +13,7 @@ export default function MoreAbout() {
 
             <div className="about-wrapper">
                 <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEFhXqYPsj_sg/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=S8ojLGSmb-fcEIK8kzlEw0tdHtKISTglzcfZILmcPA4" alt="cv-pic"></img>
-                <div className="text">
+                <div className="text-details">
                     <ul>
                         <li><span>Nume:</span> Luca</li>
                         <li><span>Prenume:</span> Vasile - Luca</li>

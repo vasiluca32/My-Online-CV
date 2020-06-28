@@ -13,13 +13,25 @@
     padding-top: 20px;
 }
 
-.text li{
+.text-details{
+    width: 100%;
+    margin-left: 15px;
+    
+}
+.text-details::after{
+    content: "";
+    display: block;
+    border-bottom: 1px solid #e6e9ec;
+    margin-top: 16px;
+}
+.text-details li{
     font-size: large;
 }
-.text span{
+.text-details span{
     font-weight: bold;
 }
-.text ul{
+
+.text-details ul{
     padding-block-start: 10px;
     padding-inline-start: 20px;
     margin-top: 27px;
@@ -62,7 +74,7 @@
         width: 300px;
         height: 300px;
     }
-    .text{
+    .text-details{
         display: flex;
         align-items: center;
     }

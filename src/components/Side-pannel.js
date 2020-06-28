@@ -19,7 +19,7 @@ class Pannel extends Component {
     render() {
         return (
             <div className="container">
-                <img onClick={this.burgerClick} className={this.state.display ? "burger-hide" : "burger"} alt="ceva" src="https://image.flaticon.com/icons/svg/3094/3094382.svg"></img>
+                <img onClick={this.burgerClick} className={this.state.display ? "burger-hide" : "burger"} alt="side-panel-menu" src="https://image.flaticon.com/icons/svg/3094/3094382.svg"></img>
                 <div className={this.state.display ? "container-show" : "container-hidden"}>
 
                     <svg onClick={this.minimzeClick} className="minimize" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -28,7 +28,7 @@ class Pannel extends Component {
                         <path fillRule="evenodd" d="M2.036 9.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V10h-3.5a.5.5 0 0 1-.5-.5z" />
                     </svg>
                     <div className="header-details">
-                        <img className="cv-pic" alt="poza-cv" src="https://media-exp1.licdn.com/dms/image/C4D03AQEFhXqYPsj_sg/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=S8ojLGSmb-fcEIK8kzlEw0tdHtKISTglzcfZILmcPA4" ></img>
+                        <img className="cv-pic" alt="cv-pic" src="https://media-exp1.licdn.com/dms/image/C4D03AQEFhXqYPsj_sg/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=S8ojLGSmb-fcEIK8kzlEw0tdHtKISTglzcfZILmcPA4" ></img>
                         <div className="side-details">
                             <ul>
                                 <li><span>Surname:</span> Vasile - Luca</li>
