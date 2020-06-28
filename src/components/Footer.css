@@ -1,9 +1,63 @@
-.footer{
-  width: 100%;
+.row{
   background-color: dimgray;
-  left: 0;
-  bottom: 0;
   color: white;
+  margin: 0px !important;
+}
+
+.row a{
+  color: white;
+}
+
+.row h3{
+  margin-top: 5px;
+  margin-bottom: 20px;
+  font-family: Parkavenue, cursive;
   text-align: center;
-  height: 60px;
+}
+
+.about{
+  border:1px solid black
+}
+.contact{
+  display: flex;
+  justify-content: center;
+}
+.social{
+  display: flex;
+  justify-content: center;
+}
+
+.contact div{
+  display:flex;
+  justify-content: flex-start;
+}
+.contact div p{
+  margin: 0px 0px 0px 10px;
+}
+
+.col-md-4 p{  
+  font-size: medium;
+  
+}
+
+.icons{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.description p{
+  padding: 0px 30px;
+  align-items: start;
+}
+
+.icon{
+  width: 25px;
+  height:25px;
+  cursor: pointer;
+  margin:5px;
+}
+
+.icon:hover{
+  color:blue;
 }

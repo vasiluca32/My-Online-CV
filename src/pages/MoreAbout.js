@@ -1,30 +1,50 @@
 import React from "react";
 import "./Pages.css";
+import "./About.css";
 
 export default function MoreAbout() {
 
     return (
-        <div className="section-container">
-            <h1>Current page title</h1>
-            <br></br>
-            <div className="section-wrap">
-                <div className="section">
-                    <div className="company-logo">
-                        <img src="" alt="company-logo"></img>
-                    </div>
-                    <div className="text">
-                        <h3>Company name</h3>
-                        <br></br>
-                        <div className="role-location">
-                            <h5>Role</h5>
-                            <p>Period | total (9 months)</p>
-                            <p>Cluj, Romania</p>
-                        </div>
-                        <br></br>
-                        <p>short description asdASDSAD ASFAS FSADF SDFSDF SDF SDF DSFSDFASWEETERGE EGERG ERGEQERG  ERGQE  ERGQEG QERGQERG QERGQE RGQERGQ ERGQERG QERGR G E RGFGDLKlkslfkjslkgjlskfgjdf gdfgdfgd gdf gd fgd fgdgdfgdrg fgdge rge rgd dg  erge</p>
-                    </div>
-                </div>
+        <div className="about-container">
+            <div className="section-container-header">
+                <h1>More about me</h1>
+                <br></br>
             </div>
+
+            <div className="about-wrapper">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEFhXqYPsj_sg/profile-displayphoto-shrink_200_200/0?e=1598486400&v=beta&t=S8ojLGSmb-fcEIK8kzlEw0tdHtKISTglzcfZILmcPA4" alt="cv-pic"></img>
+                <div className="text">
+                    <ul>
+                        <li><span>Nume:</span> Luca</li>
+                        <li><span>Prenume:</span> Vasile - Luca</li>
+                        <li><span>Varsta:</span> 28 ani</li>
+                        <li><span>Oras:</span> Cluj - Napoca</li>
+                        <li><span>Tel:</span> 0748794107</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div className="short-description">
+                <p>     I am a positive and calm person with sense of humor guided by the philosophy of treating others as I would like to
+                be treated. After graduating high school, I have done my best to gain experience and improve my skills hence I
+                have work most of the time in parallel to my university and master studies. Being a sociable and ambitious person
+                helped me a lot during my jobs in United States where I had the great opportunity to be part of “Work and Travel”
+                Program over 3 summers. I always try to see a problem from more point of views, but moreover I am a hard
+                working person willing to always learn new things.</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
     )
 }

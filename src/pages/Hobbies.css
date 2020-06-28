@@ -1,0 +1,47 @@
+
+
+.containerr{
+
+    background-color: ghostwhite;
+}
+
+.hobbies{
+    background-color: ghostwhite;
+    justify-content: center;
+    
+}
+
+.hobby-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.icon-hobby{
+    width: 75px;
+    height: 75px;
+    
+}
+
+.hobby{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    margin: 20px;
+    width: 420px;
+    height: 260px;
+    padding: 10px;
+    align-items: center;
+}
+
+.hobby p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 992px) {
+    .hobby-wrapper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
