@@ -39,8 +39,9 @@
 
 .burger-hidden img{
   position: absolute;
-  height: 64px;
-  right: 15px;
+  height: 40px;
+  right: 5px;
+  top:12px;
   border-radius: 30px;
   cursor: pointer;
   display: none;
@@ -53,7 +54,7 @@
     position: absolute;
     right: 0px;
     background-color: currentColor;
-    top: 64px;
+    top: 50px;
     display: none;
 }
 
@@ -78,7 +79,7 @@
     position: absolute;
     right: 0px;
     background-color: currentColor;
-    top: 64px;
+    
   }
   .dropdown-content:hover{
   display: block;
@@ -89,7 +90,7 @@
   position: absolute;
   right: 0px;
   background-color: currentColor;
-  top: 64px;
+  
 }
 
 
