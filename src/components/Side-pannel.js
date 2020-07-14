@@ -20,6 +20,9 @@ class Pannel extends Component {
         return (
             <div className="container">
                 <img onClick={this.burgerClick} className={this.state.display ? "burger-hide" : "burger"} alt="side-panel-menu" src="https://image.flaticon.com/icons/svg/3094/3094382.svg"></img>
+                <div className="tip">
+                    <p className="tip-text">Basic info</p>
+                </div>
                 <div className={this.state.display ? "container-show" : "container-hidden"}>
 
                     <svg onClick={this.minimzeClick} className="minimize" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
