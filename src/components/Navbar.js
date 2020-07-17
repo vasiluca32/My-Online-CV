@@ -14,6 +14,7 @@ class Navbar extends Component {
             more: false,
             hobbies: false,
             contact: false,
+            video: false,
         };
     }
     componentDidMount() {
@@ -68,6 +69,13 @@ class Navbar extends Component {
         });
     }
 
+    video = () => {
+        this.resetState();
+        this.setState({
+            video: true
+        });
+    }
+
 
 
     resetState() {
@@ -80,6 +88,7 @@ class Navbar extends Component {
             more: false,
             hobbies: false,
             contact: false,
+            video: false,
         });
     }
 
@@ -95,6 +104,7 @@ class Navbar extends Component {
                     <Link onClick={this.more} to="/More about" className={this.state.more ? "active" : "inactive"}><p>More about</p></Link>
                     <Link onClick={this.hobbies} to="/Hobbies" className={this.state.hobbies ? "active" : "inactive"}><p>Hobbies</p></Link>
                     <Link onClick={this.contact} to="/Contact" className={this.state.contact ? "active" : "inactive"}><p>Contact</p></Link>
+                    <Link onClick={this.video} to="/Thank you" className={this.state.video ? "active" : "inactive"}><p>Thank you</p></Link>
                 </div>
                 <div className="burger-hidden">
 
@@ -108,6 +118,7 @@ class Navbar extends Component {
                         <Link onClick={this.more} to="/More about" className={this.state.more ? "active" : "inactive"}><p>More about</p></Link>
                         <Link onClick={this.hobbies} to="/Hobbies" className={this.state.hobbies ? "active" : "inactive"}><p>Hobbies</p></Link>
                         <Link onClick={this.contact} to="/Contact" className={this.state.contact ? "active" : "inactive"}><p>Contact</p></Link>
+                        <Link onClick={this.video} to="/Thank you" className={this.state.video ? "active" : "inactive"}><p>Thank you</p></Link>
                     </div>
                 </div>
             </div >

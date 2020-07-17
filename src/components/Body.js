@@ -9,7 +9,7 @@ import Education from "../pages/Education"
 import MoreAbout from "../pages/MoreAbout"
 import Hobbies from "../pages/Hobbies"
 import Contact from "../pages/Contact"
-
+import Video from "../pages/Thank-you"
 
 export default function Body() {
     return (
@@ -23,6 +23,7 @@ export default function Body() {
             <Route exact path="/More about" component={MoreAbout} />
             <Route exact path="/Hobbies" component={Hobbies} />
             <Route exact path="/Contact" component={Contact} />
+            <Route exact path="/Thank you" component={Video} />
 
 
 
