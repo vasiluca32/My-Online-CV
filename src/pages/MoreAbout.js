@@ -36,15 +36,6 @@ export default function MoreAbout() {
             </div>
 
 
-
-
-
-
-
-
-
-
-
         </div>
     )
 }
