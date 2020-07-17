@@ -44,37 +44,10 @@ export default function Hobbies() {
                         <p>...and long walks through the forest with my dogs.</p>
                     </div>
 
-
                 </div>
-
-
 
             </div>
 
-
-
-
-
-
-
-            {/* <div classNameName="section-wrap">
-                <div classNameName="section">
-                    <div classNameName="company-logo">
-                        <img src="" alt="company-logo"></img>
-                    </div>
-                    <div classNameName="text">
-                        <h3>Company name</h3>
-                        <br></br>
-                        <div classNameName="role-location">
-                            <h5>Role</h5>
-                            <p>Period | total (9 months)</p>
-                            <p>Cluj, Romania</p>
-                        </div>
-                        <br></br>
-                        <p>short description asdASDSAD ASFAS FSADF SDFSDF SDF SDF DSFSDFASWEETERGE EGERG ERGEQERG  ERGQE  ERGQEG QERGQERG QERGQE RGQERGQ ERGQERG QERGR G E RGFGDLKlkslfkjslkgjlskfgjdf gdfgdfgd gdf gd fgd fgdgdfgdrg fgdge rge rgd dg  erge</p>
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }
