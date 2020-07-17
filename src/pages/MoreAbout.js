@@ -31,7 +31,7 @@ export default function MoreAbout() {
                 be treated. After graduating high school, I have done my best to gain experience and improve my skills hence I
                 have work most of the time in parallel to my university and master studies. Being a sociable and ambitious person
                 helped me a lot during my jobs in United States where I had the great opportunity to be part of “Work and Travel”
-                Program over 3 summers. I always try to see a problem from more point of views, but moreover I am a hard
+                Program over 3 summers. I can speak in 3 different languages: Romanian - Native, English - Advanced and Hungarian - Beginner. I always try to see a problem from more point of views, but moreover I am a hard
                 working person willing to always learn new things.</p>
             </div>
 
