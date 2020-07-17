@@ -79,7 +79,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>I have a good administration of time, finishing all the projects before deadline. </p>
+                                <p>I have a good administration of time, finishing all the projects before deadline. I also like to split the big project into smaller ones. </p>
                             </div>
                         </div>
                     </div>
