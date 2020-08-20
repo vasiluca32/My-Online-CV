@@ -1,3 +1,8 @@
+Take a look at my app: https://vasiluca32.github.io/My-Online-CV
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
