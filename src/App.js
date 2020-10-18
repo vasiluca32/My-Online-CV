@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import { HashRouter as Router } from "react-router-dom";
 import Pannel from "./components/Side-pannel"
 
+
 function App() {
   return (
     <Router>
