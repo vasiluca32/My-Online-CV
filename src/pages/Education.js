@@ -24,7 +24,7 @@ export default function Education() {
                             <p>Cluj, Romania</p>
                         </div>
                         <br></br>
-                        <p>I liked very much what I've learned for Bachelor and I wanted to know even more, here is the reason why I followed the same field for Masters</p>
+                        {/* <p>I liked very much what I've learned for Bachelor and I wanted to know even more, here is the reason why I followed the same field for Masters</p> */}
                     </div>
                 </div>
                 <div className="section">
@@ -40,7 +40,7 @@ export default function Education() {
                             <p>Cluj, Romania</p>
                         </div>
                         <br></br>
-                        <p>After graduating High School in economics, I taught that it would be a logical decision to continue my studies in the same field and I followed the specialisation in Trade Tourism and Services.</p>
+                        {/* <p>After graduating High School in economics, I taught that it would be a logical decision to continue my studies in the same field and I followed the specialisation in Trade Tourism and Services.</p> */}
                     </div>
                 </div>
             </div>

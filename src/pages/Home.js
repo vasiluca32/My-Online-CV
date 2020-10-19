@@ -9,7 +9,7 @@ export default function Home() {
             <div className="home-wrapper">
                 <img className="wallpaper" src={Wallpaper} alt="wallpaper"></img>
                 <div className="home-text">
-                    <h1>WORK HARD IN SILENCE,<br></br>LET YOUR SUCCESS BE YOUR NOISE</h1>
+                    <h1>WORK HARD IN SILENCE,<br></br>LET YOUR SUCCESS BE YOUR SOUND</h1>
                 </div>
             </div>
         </div>
