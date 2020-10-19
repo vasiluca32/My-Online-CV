@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="col-md-4">
                 <div className="description">
                     <h3>Short description</h3>
-                    <p>This is the final individual project taking part at Scoala Informala de IT. In the same time this is my CV</p>
+                    <p>This page represents my CV, and has been developed during mu training at <a id="link-scoala" href="https://scoalainformala.ro/" target="_blank">"Informal School of IT"</a> being my individual project.</p>
                 </div>
             </div>
             <div className="col-md-4">
@@ -22,7 +22,7 @@ export default function Footer() {
                     <div className="icons">
                         <div>
                             <GoLocation className="icon" />
-                            <p>Gheorghieni nr 32</p>
+                            <p>Cluj-Napoca</p>
                         </div>
                         <div>
                             <AiOutlinePhone className="icon" />
@@ -45,9 +45,9 @@ export default function Footer() {
                 <h3>Follow me</h3>
                 <div className="social">
 
-                    <a href="https://www.facebook.com/luca.vasileluca"> <FaFacebookF className="icon" /></a>
-                    <a href="https://www.instagram.com/lucavasileluca/"><RiInstagramLine className="icon" /></a>
-                    <a href="https://www.linkedin.com/in/vasile-luca-luca/"><GrLinkedin className="icon" /></a>
+                    <a href="https://www.linkedin.com/in/vasile-luca-luca/" target="_blank"><GrLinkedin className="icon" /></a>
+                    {/* <a href="https://www.facebook.com/luca.vasileluca"> <FaFacebookF className="icon" /></a>
+                    <a href="https://www.instagram.com/lucavasileluca/"><RiInstagramLine className="icon" /></a> */}
 
                 </div>
             </div>

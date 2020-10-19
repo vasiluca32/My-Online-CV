@@ -75,26 +75,26 @@ class Contact extends Component {
                 <div className="form-wrapper">
                     <form className="form" action="#" onSubmit={this.handleSubmit.bind(this)} method="POST">
                         <label>First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.."
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..."
                             value={this.state.fname}
                             onChange={this.onfnameChange.bind(this)} />
                         <label>Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..."
                             value={this.state.lname}
                             onChange={this.onlnameChange.bind(this)} />
 
 
                         <label>Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email"
+                        <input type="email" id="email" name="email" placeholder="Your email... "
                             value={this.state.email}
                             onChange={this.onEmailChange.bind(this)} />
 
 
-                        <label>Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.."
+                        <label>Text</label>
+                        <textarea id="subject" name="subject"
                             onChange={this.onMessageChange.bind(this)}
                             value={this.state.message}></textarea>
-                        <button type="submit" value="Submit" >Submit</button>
+                        <input type="submit" value="Submit" ></input>
                         {/* <div>
                             {this.state.mailSent &&
                                 <div>Thank you for contcting us.</div>

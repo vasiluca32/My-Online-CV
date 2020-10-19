@@ -38,7 +38,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>Working in Finance requires high attention to detail because everything needs to be compliant.</p>
+                                <p>I developed high attention to detail when I started working in Finance, as in field everything needs to be compliant.</p>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>I am open to new challanges, the proof it is that I started this module and I finished it. In the same time I'm looking for he next one.  </p>
+                                <p>I am open to new challenges and continuous development, the proof being that I took my passion for web development and working on transform it into a profession.</p>
                             </div>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>I proved I'm a team player while working for the group project in a team of 4. The project was a success.</p>
+                                <p>I enjoy team work and I was able to prove this not only in all the fields I have worked so far but during the web development team projects as well. </p>
                             </div>
                         </div>
                     </div>
@@ -79,7 +79,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>I have a good administration of time, finishing all the projects before deadline. I also like to split the big project into smaller ones. </p>
+                                <p>I have a good time management, finishing all the projects before deadline and always achieving targets.  </p>
                             </div>
                         </div>
                     </div>
@@ -92,7 +92,7 @@ export default function Skills() {
                                 <img className="arrow-right" src="https://upload-icon.s3.us-east-2.amazonaws.com/uploads/icons/png/18024761991530177266-512.png" alt="arrow"></img>
                             </div>
                             <div className="text-wrap">
-                                <p>Front-end requires creativity from developers and I think I have it. The feedbeck from others was good everywhere I worked.</p>
+                                <p>Front-end requires creativity from developers and I have plenty of it. </p>
                             </div>
                         </div>
                     </div>
