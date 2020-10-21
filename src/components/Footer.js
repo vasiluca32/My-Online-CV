@@ -13,7 +13,7 @@ export default function Footer() {
             <div className="col-md-4">
                 <div className="description">
                     <h3>Short description</h3>
-                    <p>This page represents my CV, and has been developed during mu training at <a id="link-scoala" href="https://scoalainformala.ro/" target="_blank">"Informal School of IT"</a> being my individual project.</p>
+                    <p>This page represents my CV, and has been developed during my training at <a id="link-scoala" href="https://scoalainformala.ro/" target="_blank">"Informal School of IT"</a> being my individual project.</p>
                 </div>
             </div>
             <div className="col-md-4">
