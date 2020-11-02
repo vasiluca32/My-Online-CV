@@ -1,6 +1,5 @@
-import React, { Component } from "react";
 import axios from "axios";
-import "./index.php"
+import React, { Component, useState } from "react";
 import "./Contact.css"
 
 
@@ -8,8 +7,8 @@ class Contact extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            fname: '',
-            lname: '',
+            name: '',
+            subject: '',
             email: '',
             message: '',
             mailSent: false,
@@ -19,12 +18,12 @@ class Contact extends Component {
     }
 
 
-    onfnameChange(event) {
-        this.setState({ fname: event.target.value })
+    nameChange(event) {
+        this.setState({ name: event.target.value })
     }
 
-    onlnameChange(event) {
-        this.setState({ lname: event.target.value })
+    subjectChange(event) {
+        this.setState({ subject: event.target.value })
     }
 
     onEmailChange(event) {
@@ -37,27 +36,20 @@ class Contact extends Component {
 
 
 
-
-    handleSubmit(e) {
+    async sendEmail(e) {
         e.preventDefault();
-        axios({
-            method: "POST",
-            url: "index.php",
-            data: this.state
-        }).then((response) => {
-            if (response.data.status === 'success') {
-                alert("Message Sent.");
-                this.resetForm()
-            } else if (response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
+        const { name, phone, email, comment } = this.state;
+        const bookConsultation = await axios.post('/send', {
+            name,
+
+            email,
+
         })
     }
-
     resetForm() {
         this.setState({
-            fname: '',
-            lname: '',
+            name: '',
+            subject: '',
             email: '',
             message: '',
             mailSent: false,
@@ -73,21 +65,22 @@ class Contact extends Component {
             <div className="form-container">
                 <h1>Contact Me</h1>
                 <div className="form-wrapper">
-                    <form className="form" action="#" onSubmit={this.handleSubmit.bind(this)} method="POST">
-                        <label>First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..."
-                            value={this.state.fname}
-                            onChange={this.onfnameChange.bind(this)} />
-                        <label>Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..."
-                            value={this.state.lname}
-                            onChange={this.onlnameChange.bind(this)} />
+                    <form className="form" onSubmit={this.sendEmail}>
+                        <label>Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..."
+                            value={this.state.name}
+                            onChange={this.nameChange.bind(this)} />
 
 
                         <label>Email</label>
                         <input type="email" id="email" name="email" placeholder="Your email... "
                             value={this.state.email}
                             onChange={this.onEmailChange.bind(this)} />
+
+                        <label>Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Your subject..."
+                            value={this.state.subject}
+                            onChange={this.subjectChange.bind(this)} />
 
 
                         <label>Text</label>

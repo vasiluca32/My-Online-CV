@@ -104,6 +104,11 @@ class Navbar extends Component {
             contact: false,
             video: false,
         });
+        window.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
     }
 
     render() {
