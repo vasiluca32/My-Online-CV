@@ -5,17 +5,18 @@ import "./Contact.css"
 
 class Contact extends Component {
     constructor(props) {
-        super(props);
+        super();
         this.state = {
-            name: '',
-            subject: '',
-            email: '',
-            message: '',
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
             mailSent: false,
             error: null
-        }
-
+        };
     }
+
+
 
 
     nameChange(event) {
@@ -34,18 +35,6 @@ class Contact extends Component {
         this.setState({ message: event.target.value })
     }
 
-
-
-    async sendEmail(e) {
-        e.preventDefault();
-        const { name, phone, email, comment } = this.state;
-        const bookConsultation = await axios.post('/send', {
-            name,
-
-            email,
-
-        })
-    }
     resetForm() {
         this.setState({
             name: '',
@@ -58,14 +47,20 @@ class Contact extends Component {
     }
 
 
+    sendEmail() {
+
+        alert(this.state.name)
+
+    }
+
 
     render() {
-        console.log(this.state)
+        // console.log(this.state)
         return (
             <div className="form-container">
                 <h1>Contact Me</h1>
                 <div className="form-wrapper">
-                    <form className="form" onSubmit={this.sendEmail}>
+                    <form className="form" onSubmit={this.sendEmail.bind(this)}>
                         <label>Name</label>
                         <input type="text" id="name" name="name" placeholder="Your name..."
                             value={this.state.name}
@@ -87,7 +82,7 @@ class Contact extends Component {
                         <textarea id="subject" name="subject"
                             onChange={this.onMessageChange.bind(this)}
                             value={this.state.message}></textarea>
-                        <input type="submit" value="Submit" ></input>
+                        <input type="submit" value="submit" ></input>
                         {/* <div>
                             {this.state.mailSent &&
                                 <div>Thank you for contcting us.</div>
