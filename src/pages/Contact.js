@@ -1,100 +1,94 @@
 import axios from "axios";
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import "./Contact.css"
 
+const ContactForm = () => {
 
-class Contact extends Component {
-    constructor(props) {
-        super();
-        this.state = {
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-            mailSent: false,
-            error: null
-        };
-    }
+    const [state, setState] = useState({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+    })
 
+    const [result, setResult] = useState(null);
 
+    const sendEmail = event => {
+        event.preventDefault();
+        axios
+            .post('/send', { ...state })
+            .then(response => {
+                setResult(response.data);
+                setState({
+                    name: '',
+                    email: '',
+                    subject: '',
+                    message: ''
+                });
+            })
+            .catch(() => {
+                setResult({
+                    success: false,
+                    message: 'Something went wrong. Try again later'
 
+                });
 
-    nameChange(event) {
-        this.setState({ name: event.target.value })
-    }
-
-    subjectChange(event) {
-        this.setState({ subject: event.target.value })
-    }
-
-    onEmailChange(event) {
-        this.setState({ email: event.target.value })
-    }
-
-    onMessageChange(event) {
-        this.setState({ message: event.target.value })
-    }
-
-    resetForm() {
-        this.setState({
-            name: '',
-            subject: '',
-            email: '',
-            message: '',
-            mailSent: false,
-            error: null
-        })
-    }
+            });
+    };
 
 
-    sendEmail() {
+    const onInputChange = event => {
+        const { name, value } = event.target;
 
-        alert(this.state.name)
-
-    }
-
-
-    render() {
-        // console.log(this.state)
-        return (
-            <div className="form-container">
-                <h1>Contact Me</h1>
-                <div className="form-wrapper">
-                    <form className="form" onSubmit={this.sendEmail.bind(this)}>
-                        <label>Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your name..."
-                            value={this.state.name}
-                            onChange={this.nameChange.bind(this)} />
+        setState({
+            ...state,
+            [name]: value
+        });
+    };
 
 
-                        <label>Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your email... "
-                            value={this.state.email}
-                            onChange={this.onEmailChange.bind(this)} />
+    return (
 
-                        <label>Subject</label>
-                        <input type="text" id="subject" name="subject" placeholder="Your subject..."
-                            value={this.state.subject}
-                            onChange={this.subjectChange.bind(this)} />
+        <div className="form-container">
+            <h1>Contact Me</h1>
+            {result && (
+                <p className={`${result.success ? 'success' : 'error'}`}>
+                    {result.message}
+                </p>
+            )}
+            <div className="form-wrapper">
+                <form className="form" onSubmit={sendEmail}>
+                    <label>Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name..."
+                        value={state.name}
+                        onChange={onInputChange} />
 
 
-                        <label>Text</label>
-                        <textarea id="subject" name="subject"
-                            onChange={this.onMessageChange.bind(this)}
-                            value={this.state.message}></textarea>
-                        <input type="submit" value="submit" ></input>
-                        {/* <div>
-                            {this.state.mailSent &&
-                                <div>Thank you for contcting us.</div>
-                            }
-                        </div> */}
-                    </form>
-                </div>
+                    <label>Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email... "
+                        value={state.email}
+                        onChange={onInputChange} />
+
+                    <label>Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Your subject..."
+                        value={state.subject}
+                        onChange={onInputChange} />
+
+
+                    <label>Text</label>
+                    <textarea id="message" name="message"
+                        value={state.message}
+                        onChange={onInputChange}></textarea>
+                    <input type="submit" value="submit" ></input>
+                </form>
             </div>
-        )
-    }
+        </div>
+    )
+
 }
 
 
+export default ContactForm;
 
-export default Contact;
+
+
