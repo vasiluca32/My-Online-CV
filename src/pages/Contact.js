@@ -16,7 +16,7 @@ const ContactForm = () => {
     const sendEmail = event => {
         event.preventDefault();
         axios
-            .post('/send', { ...state })
+            .post("http://localhost:9000/testAPI", { ...state })
             .then(response => {
                 setResult(response.data);
                 setState({
