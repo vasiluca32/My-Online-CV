@@ -4,7 +4,7 @@ const transporter = require('./config');
 const dotenv = require('dotenv');
 dotenv.config();
 const app = express();
-const port = 3000
+
 
 const buildPath = path.join(__dirname, '..', 'build');
 app.use(express.json());
@@ -54,6 +54,3 @@ app.post('/send', (req, res) => {
 
 
 
-app.listen(3030, () => {
-    console.log(`Example app listening at http://localhost:${port}`);
-});
