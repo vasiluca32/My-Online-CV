@@ -1,91 +1,113 @@
-
-import React, { useState } from "react";
+import axios from "axios";
+import React, { Component, useState } from "react";
 import "./Contact.css"
 
-const ContactForm = () => {
+class Contact extends Component {
+    constructor(props) {
+        super();
+        this.state = {
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            mailSent: false,
+            error: null
+        };
+    }
 
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [subject, setSubject] = useState("");
-    const [message, setMessage] = useState("");
+    nameChange(event) {
+        this.setState({ name: event.target.value })
+    }
 
+    subjectChange(event) {
+        this.setState({ subject: event.target.value })
+    }
 
+    onEmailChange(event) {
+        this.setState({ email: event.target.value })
+    }
 
-    const sendEmail = async (e) => {
-        e.preventDefault();
-        console.log({ name, email, subject, message })
-        const response = await fetch("/access", {
-            method: "POST",
-            mode: "no-cors",
-            headers: {
-                "Content-type": "application/json"
-            },
-            body: JSON.stringify({ name, email, subject, message })
-        });
-        console.log({ name, email, subject, message })
-        const resData = await response.json();
-        console.log("response")
-        if (resData.status === "success") {
-            alert("Message Sent.");
-            this.resetForm()
-        } else if (resData.status === "fail") {
-            alert("Message failed to send.")
-        }
-    };
+    onMessageChange(event) {
+        this.setState({ message: event.target.value })
+    }
 
-
-    // function onInputChange(event) {
-    //     const { name, value } = event.target;
-
-    //     setState({
-    //         ...state,
-    //         [name]: value
-    //     });
-    // }
-
-
-    return (
-
-        <div className="form-container">
-            <h1>Contact Me</h1>
-            {/* {result && (
-                <p className={`${result.success ? 'success' : 'error'}`}>
-                    {result.message}
-                </p>
-            )} */}
-            <div className="form-wrapper">
-                <form className="form" onSubmit={sendEmail}>
-                    <label>Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your name..."
-                        value={name}
-                        onChange={e => setName(e.target.value)} />
+    resetForm() {
+        this.setState({
+            name: '',
+            subject: '',
+            email: '',
+            message: '',
+            mailSent: false,
+            error: null
+        })
+    }
 
 
-                    <label>Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your email... "
-                        value={email}
-                        onChange={e => setEmail(e.target.value)} />
+    sendEmail() {
 
-                    <label>Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="Your subject..."
-                        value={subject}
-                        onChange={e => setSubject(e.target.value)} />
+        axios
+            .post('http://localhost:3000/send', { ...this.state })
+            .then(response => {
+
+                this.setState({
+                    name: '',
+                    subject: '',
+                    email: '',
+                    message: '',
+                });
+                console.log(response)
+            })
 
 
-                    <label>Text</label>
-                    <textarea id="message" name="message"
-                        value={message}
-                        onChange={e => setMessage(e.target.value)}></textarea>
-                    <input type="submit" value="submit" ></input>
-                </form>
+
+        // alert(this.state.name)
+
+    }
+
+    render() {
+
+        return (
+            <div className="form-container">
+                <h1>Contact Me</h1>
+
+                <div className="form-wrapper">
+                    <form className="form" onSubmit={this.sendEmail.bind(this)}>
+                        <label>Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name..."
+                            value={this.state.name}
+                            onChange={this.nameChange.bind(this)} />
+
+
+                        <label>Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email... "
+                            value={this.state.email}
+                            onChange={this.onEmailChange.bind(this)} />
+
+                        <label>Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Your subject..."
+                            value={this.state.subject}
+                            onChange={this.subjectChange.bind(this)} />
+
+
+                        <label>Text</label>
+                        <textarea id="subject" name="subject"
+                            onChange={this.onMessageChange.bind(this)}
+                            value={this.state.message}></textarea>
+                        <button >button</button>
+                        {/* <div>
+                            {this.state.mailSent &&
+                                <div>Thank you for contcting us.</div>
+                            }
+                        </div> */}
+                    </form>
+                </div>
             </div>
-        </div>
-    )
-
+        )
+    }
 }
 
 
-export default ContactForm;
+export default Contact;
 
 
 
