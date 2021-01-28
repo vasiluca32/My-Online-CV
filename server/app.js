@@ -18,7 +18,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use(
   cors({
-    origin: 'https://vasiluca32.github.io/My-Online-CV/#/Contact/send',
+    origin: 'http://localhost:3000',
     credentials: true,
   })
 );
@@ -84,7 +84,7 @@ app.post('/send', (req, res) => {
 
 });
 
-app.listen(3000, () => {
+app.listen(8080, () => {
   console.log('Server started...');
   console.log(`Network access via: ${ipAddress}!`);
 });
