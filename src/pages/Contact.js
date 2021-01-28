@@ -10,7 +10,7 @@ class Contact extends Component {
             email: "",
             subject: "",
             message: "",
-            mailSent: false,
+            mailSent: "",
             error: null
         };
     }
@@ -37,7 +37,7 @@ class Contact extends Component {
             subject: '',
             email: '',
             message: '',
-            mailSent: false,
+            mailSent: "",
             error: null
         })
     }
@@ -48,14 +48,12 @@ class Contact extends Component {
         axios
             .post('http://localhost:3000/send', { ...this.state })
             .then(response => {
-
-                this.setState({
-                    name: '',
-                    subject: '',
-                    email: '',
-                    message: '',
-                });
+                setResponseData(response.data)
                 console.log(response)
+
+            }).catch((error) => {
+                console.log(error);
+
             })
 
 
@@ -93,7 +91,7 @@ class Contact extends Component {
                         <textarea id="subject" name="subject"
                             onChange={this.onMessageChange.bind(this)}
                             value={this.state.message}></textarea>
-                        <button >button</button>
+                        <input type="submit"></input>
                         {/* <div>
                             {this.state.mailSent &&
                                 <div>Thank you for contcting us.</div>

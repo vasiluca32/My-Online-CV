@@ -9,6 +9,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 const transporter = require('./config');
 
+const ip = require('ip');
+const ipAddress = ip.address();
+
 const app = express();
 // view engine setup
 app.engine('handlebars', exphbs());
@@ -34,7 +37,7 @@ app.get('/', (req, res) => {
 app.post('/send', (req, res) => {
   // console.log(req.body);
   const output = `
-  <p>You have a new contact request</p>
+  <p>You have a new message from your online CV</p>
   <h3>Contact Details</h3>
   <ul>
   <li>Name: ${req.body.name}</li>
@@ -62,9 +65,12 @@ app.post('/send', (req, res) => {
     html: output, // html body
   };
 
-  transporter.sendMail(mailOptions, (error, info) => {
+  transporter.sendMail(mailOptions, (response, error, info) => {
     if (error) {
       return console.log(error)
+    }
+    if (response) {
+      return console.log(response)
     }
 
     console.log("Message sent: %s", info.messageId);
@@ -78,4 +84,7 @@ app.post('/send', (req, res) => {
 
 });
 
-app.listen(3000, () => console.log('Server started...'));
+app.listen(3000, () => {
+  console.log('Server started...');
+  console.log(`Network access via: ${ipAddress}!`);
+});
