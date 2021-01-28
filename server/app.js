@@ -18,7 +18,7 @@ app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 app.use(
   cors({
-    origin: 'http://localhost:3001',
+    origin: 'https://vasiluca32.github.io/My-Online-CV/#/Contact/send',
     credentials: true,
   })
 );

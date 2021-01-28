@@ -46,7 +46,7 @@ class Contact extends Component {
     sendEmail() {
 
         axios
-            .post('http://localhost:3000/send', { ...this.state })
+            .post('http://192.168.0.153/send', { ...this.state })
             .then(response => {
                 setResponseData(response.data)
                 console.log(response)
