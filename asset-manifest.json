@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/My-Online-CV/static/css/main.788db732.chunk.css",
-    "main.js": "/My-Online-CV/static/js/main.ed1e34d5.chunk.js",
-    "main.js.map": "/My-Online-CV/static/js/main.ed1e34d5.chunk.js.map",
+    "main.js": "/My-Online-CV/static/js/main.8f9265e5.chunk.js",
+    "main.js.map": "/My-Online-CV/static/js/main.8f9265e5.chunk.js.map",
     "runtime-main.js": "/My-Online-CV/static/js/runtime-main.6b9417e8.js",
     "runtime-main.js.map": "/My-Online-CV/static/js/runtime-main.6b9417e8.js.map",
     "static/css/2.95e8e5c3.chunk.css": "/My-Online-CV/static/css/2.95e8e5c3.chunk.css",
     "static/js/2.3634744f.chunk.js": "/My-Online-CV/static/js/2.3634744f.chunk.js",
     "static/js/2.3634744f.chunk.js.map": "/My-Online-CV/static/js/2.3634744f.chunk.js.map",
     "index.html": "/My-Online-CV/index.html",
-    "precache-manifest.fa0698f8683e6471ca3a60a272c8914c.js": "/My-Online-CV/precache-manifest.fa0698f8683e6471ca3a60a272c8914c.js",
+    "precache-manifest.2fc52e28f6effa692bdb6393c7ce1323.js": "/My-Online-CV/precache-manifest.2fc52e28f6effa692bdb6393c7ce1323.js",
     "service-worker.js": "/My-Online-CV/service-worker.js",
     "static/css/2.95e8e5c3.chunk.css.map": "/My-Online-CV/static/css/2.95e8e5c3.chunk.css.map",
     "static/css/main.788db732.chunk.css.map": "/My-Online-CV/static/css/main.788db732.chunk.css.map",
@@ -25,6 +25,6 @@
     "static/css/2.95e8e5c3.chunk.css",
     "static/js/2.3634744f.chunk.js",
     "static/css/main.788db732.chunk.css",
-    "static/js/main.ed1e34d5.chunk.js"
+    "static/js/main.8f9265e5.chunk.js"
   ]
 }
