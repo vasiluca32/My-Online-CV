@@ -44,7 +44,7 @@ class Contact extends Component {
 
 
     sendEmail() {
-
+        alert("Take note that this form is just a presentation and might not work. Altough, if running on localhost it is actually sending an email.")
         axios
             .post('http://localhost:8080/send', { ...this.state })
             .then(response => {
@@ -58,7 +58,7 @@ class Contact extends Component {
 
 
 
-        // alert(this.state.name)
+
 
     }
 
