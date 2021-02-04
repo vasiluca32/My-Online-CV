@@ -83,8 +83,6 @@ class Contact extends Component {
             this.child.current.getAlert();
             this.resetForm();
         }
-
-
     }
 
     render() {
