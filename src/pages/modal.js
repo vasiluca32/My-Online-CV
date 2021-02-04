@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Button, Modal } from "react-bootstrap";
-
+import "./modal.css"
 
 class Example extends Component {
     constructor(props) {
@@ -16,11 +16,12 @@ class Example extends Component {
 
     render() {
         return (
-            <div>
+            <div className="wrapper">
                 <Modal
                     show={this.state.show}
                     animation={true}
-                    size="md" className="x" >
+                    size="md" className="x"
+                >
                     <Modal.Header className="bg-danger text-white text-center py-1">
                         <Modal.Title className="text-center">
                             <h5>Warning</h5>
