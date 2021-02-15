@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/My-Online-CV/static/css/main.730a44bd.chunk.css",
+    "main.css": "/My-Online-CV/static/css/main.9ec0be14.chunk.css",
     "main.js": "/My-Online-CV/static/js/main.6037cf4e.chunk.js",
     "main.js.map": "/My-Online-CV/static/js/main.6037cf4e.chunk.js.map",
     "runtime-main.js": "/My-Online-CV/static/js/runtime-main.6b9417e8.js",
@@ -9,10 +9,10 @@
     "static/js/2.cc2f41c8.chunk.js": "/My-Online-CV/static/js/2.cc2f41c8.chunk.js",
     "static/js/2.cc2f41c8.chunk.js.map": "/My-Online-CV/static/js/2.cc2f41c8.chunk.js.map",
     "index.html": "/My-Online-CV/index.html",
-    "precache-manifest.73e367b2b40d5549445ffb696b30086b.js": "/My-Online-CV/precache-manifest.73e367b2b40d5549445ffb696b30086b.js",
+    "precache-manifest.fdb28fe8c58e456bd054f3f302672677.js": "/My-Online-CV/precache-manifest.fdb28fe8c58e456bd054f3f302672677.js",
     "service-worker.js": "/My-Online-CV/service-worker.js",
     "static/css/2.95e8e5c3.chunk.css.map": "/My-Online-CV/static/css/2.95e8e5c3.chunk.css.map",
-    "static/css/main.730a44bd.chunk.css.map": "/My-Online-CV/static/css/main.730a44bd.chunk.css.map",
+    "static/css/main.9ec0be14.chunk.css.map": "/My-Online-CV/static/css/main.9ec0be14.chunk.css.map",
     "static/js/2.cc2f41c8.chunk.js.LICENSE.txt": "/My-Online-CV/static/js/2.cc2f41c8.chunk.js.LICENSE.txt",
     "static/media/cv-pic.jpg": "/My-Online-CV/static/media/cv-pic.3879df56.jpg",
     "static/media/bootstrap.css": "/My-Online-CV/static/media/glyphicons-halflings-regular.fa277232.woff",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.6b9417e8.js",
     "static/css/2.95e8e5c3.chunk.css",
     "static/js/2.cc2f41c8.chunk.js",
-    "static/css/main.730a44bd.chunk.css",
+    "static/css/main.9ec0be14.chunk.css",
     "static/js/main.6037cf4e.chunk.js"
   ]
 }
