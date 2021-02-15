@@ -63,7 +63,9 @@
 .dropdown-content a{
   background-color: initial;
 }
-
+.dropdown-content-active{
+  display: none;
+}
 
 @media only screen and (max-width: 992px) {
   .burger-hidden img{
